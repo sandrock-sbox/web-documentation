@@ -6,11 +6,11 @@ export default defineConfig({
   description: "Technical general documentation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/markdown-examples' },
-      { text: 'API', link: '/markdown-examples' }
-    ],
+    // nav: [
+    //   { text: 'Home', link: '/' },
+    //   { text: 'Documentation', link: '/introduction' },
+    //   { text: 'API', link: '/introduction' }
+    // ],
 
     sidebar: [
       {
@@ -25,17 +25,17 @@ export default defineConfig({
               {
                 text: '🧩 Plugins',
                 items: [
-                  { text: '📜 Introduction', link: './plugins/introduction' },
-                  { text: '🛠️ How to Create Plugins', link: '/plugins/create' },
-                  { text: '📦 Plugin Marketplace', link: '/plugins/marketplace' },
+                  { text: '📜 Introduction', link: '/development/plugins/introduction' },
+                  { text: '🛠️ How to Create Plugins', link: '/development/plugins/create' },
+                  { text: '📦 Plugin Marketplace', link: '/development/plugins/marketplace' },
                 ]
               },
               {
                 text: '🛠️ API Documentation',
                 items: [
-                  { text: '📄 Overview', link: '/api/overview' },
-                  { text: '🔌 Authentication', link: '/api/authentication' },
-                  { text: '📊 Data Structures', link: '/api/data-structures' },
+                  { text: '📄 Overview', link: '/development/api-doc/overview' },
+                  { text: '🔌 Authentication', link: '/development/api-doc/auth' },
+                  { text: '📊 Data Structures', link: '/development/api-doc/data-structures' },
                 ]
               },
             ]
@@ -55,7 +55,7 @@ export default defineConfig({
                 text: '🎮 Models',
                 items: [
                   { text: '📐 3D Model Formats', link: '/visual/models/formats' },
-                  { text: '💾 Model Import Guide', link: '/visual/models/import' },
+                  { text: '💾 Model Import Guide', link: '/visual/models/import-guide' },
                 ]
               }
             ]
@@ -64,8 +64,8 @@ export default defineConfig({
           {
             text: '🚀 Create a Server',
             items: [
-              { text: '🔧 Installation', link: '/getting-started/installation' },
-              { text: '📂 Folder Structure', link: '/getting-started/folder-structure' },
+              { text: '🔧 Installation', link: '/create-server/installation' },
+              { text: '📂 Folder Structure', link: '/create-server/folder-structure' },
               // { text: '🖥️ Setting Up Environment', link: '/getting-started/setup-environment' },
             ]
           },
@@ -82,8 +82,8 @@ export default defineConfig({
     ],
     
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   }
 })
